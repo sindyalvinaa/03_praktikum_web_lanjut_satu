@@ -11,6 +11,31 @@
             </section>
             <div class="clearfix"></div>
 
+            <section>
+                <table class="table">
+                    <thead>
+                        <tr>
+                          <th scope="col">id</th>
+                          <th scope="col">name_rooms</th>
+                          <th scope="col">number_rooms</th>
+                          <th scope="col">facility_rooms</th>
+                          <th scope="col">price_rooms</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($rooms as $a)
+                        <tr>
+                        <th scope="row">{{$a->id}}</th>
+                        <td>{{$a->name_rooms}}</td>
+                        <td>{{$a->number_rooms}}</td>
+                        <td>{{$a->facility_rooms}}</td>
+                        <td>{{$a->price_rooms}}</td>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            </section>
+
             <!--gallery block--->
             <section class="gallery-block gallery-front">
                 <div class="container">
